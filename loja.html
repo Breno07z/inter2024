@@ -1,0 +1,419 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/style2.css">
+
+        
+    
+        <!--Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+        <!--Icons Bootstrap-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <script src="https://kit.fontawesome.com/72b239e7b9.js" crossorigin="anonymous"></script>
+
+        <!--splide-->
+        <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
+    <link href="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+    " rel="stylesheet">
+
+
+        <!--Fontes-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <!--SWIPPER-->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+
+<link rel="shortcut icon" href="img/logo2.png" type="image/x-icon">
+
+    <title>Loja - Centro Social Amigo de Todos</title>
+    </head>
+    <body class="minha-fonte fundo">
+
+
+  
+
+    <!--Navegação-->
+
+        <nav class="navbar navbar-expand-sm topo py-3">
+    <div class="container-fluid justify-content-end">
+      </div>
+  </nav>
+
+ <nav class="navbar navbar-expand-sm navbar-light topo2">
+      <div class="container-fluid ms-5">
+        <a class="navbar-brand" href="index.html"><img src="img/logo2.png" alt="" style="width: 6rem;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
+          aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse d-lg-flex justify-content-lg-center" id="navbarID">
+          <div class="navbar-nav txt gap-5">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="sobre.html">Sobre</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Cursos</a>
+            <a class="nav-link active" aria-current="page" href="Ajuda.html">Preciso De Ajuda</a>
+            <a class="nav-link active" aria-current="page" href="loja.html">Loja</a>
+            <a class="nav-link active" aria-current="page" href="contato.html">Contato</a>
+            <a class="nav-link active  txt" aria-current="page" href="queroajudar.html
+            " id="queroajudar">Quero Ajudar</a>
+          </div>
+
+          <div class="navbar-nav d-lg-flex d-sm-none" id="icons">
+            <div class=" d-inline-flex ms-auto">
+              <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-facebook"></i></a>
+              <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-instagram"></i></a>
+              <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-whatsapp"></i></a>
+              <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-messenger"></i></a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--Navegação Fim-->
+
+    <!--Slide-->
+        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
+        <div class="parallax-bg" style="background-color: #800080;">
+        </div>
+
+
+        
+    </div>
+
+
+    
+    <div class="container-fluid mt-5">
+    <hr class="border-5">
+        <h1 class="d-flex justify-content-center align-items-center text-uppercase">Artesanatos</h1>
+    <hr class="border-5">
+    </div>
+
+    <!--PRODUTOS-->
+    <section class="container-sm">
+        <div class="col-12 d-flex justify-content-between align-items-center">
+        <h4>Produtos</h4>
+        <div>
+            <label for="order-by" class="form-label me-2">Ordenar por:</label>
+            <select id="order-by" class="form-select">
+                <option value="relevance">Relevância</option>
+                <option value="price-asc">Preço: Menor para Maior</option>
+                <option value="price-desc">Preço: Maior para Menor</option>
+                <option value="newest">Mais Novos</option>
+            </select>
+        </div>
+    </div>
+
+
+
+    <div id="product-list" class="row">
+
+    <div class="col-6 col-md-3">
+    <div class="card border-0" data-price="299.99" data-date="2023-07-01">
+        <a href="#" class="text-decoration-none">
+        <img src="img/artesanato-para-vender-37.png" class="card-img-top pt-5 original" alt="Product 2">
+        </a>
+        <div class="card-body position-relative">
+        <h5 class="card-title fs-6 text-center">Bolsa</h5>
+        <p class="card-text fs-2 fw-bold text-center">R$ 299,99</p>
+        <p class="card-text fs-6 text-center">R$ 285,00 à vista com desconto</p>
+        <div class="select-color-container hidden-on-hover">
+            <div class="d-flex justify-content-center rounded-5 pt-1">
+            <button type="button" class="w-100 btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" onclick="sendWhatsAppMessage(this)">Comprar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+        <!-- Adicione mais cards aqui, seguindo a mesma estrutura -->
+    <div class="col-6 col-md-3">
+    <div class="card border-0" data-price="299.99" data-date="2023-07-01">
+        <a href="#" class="text-decoration-none">
+        <img src="img/ports canetas.png" class="card-img-top pt-5 original" alt="Product 2">
+        </a>
+        <div class="card-body position-relative">
+        <h5 class="card-title fs-6 text-center">Porta Caneta</h5>
+        <p class="card-text fs-2 fw-bold text-center">R$ 99,99</p>
+        <p class="card-text fs-6 text-center">R$ 85,00 à vista com desconto</p>
+        <div class="select-color-container hidden-on-hover">
+            <div class="d-flex justify-content-center rounded-5 pt-1">
+            <button type="button" class="w-100 btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" onclick="sendWhatsAppMessage(this)">Comprar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+        <div class="col-6 col-md-3">
+    <div class="card border-0" data-price="299.99" data-date="2023-07-01">
+        <a href="#" class="text-decoration-none">
+        <img src="img/bichos.png" class="card-img-top pt-5 original" alt="Product 2">
+        </a>
+        <div class="card-body position-relative">
+        <h5 class="card-title fs-6 text-center">Urso</h5>
+        <p class="card-text fs-2 fw-bold text-center">R$ 99,99</p>
+        <p class="card-text fs-6 text-center">R$ 89,00 à vista com desconto</p>
+        <div class="select-color-container hidden-on-hover">
+            <div class="d-flex justify-content-center rounded-5 pt-1">
+            <button type="button" class="w-100 btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" onclick="sendWhatsAppMessage(this)">Comprar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="col-6 col-md-3">
+    <div class="card border-0" data-price="299.99" data-date="2023-07-01">
+        <a href="#" class="text-decoration-none">
+        <img src="img/girasol.png" class="card-img-top pt-5 original" alt="Product 2">
+        </a>
+        <div class="card-body position-relative">
+        <h5 class="card-title fs-6 text-center">girasol</h5>
+        <p class="card-text fs-2 fw-bold text-center">R$ 69,99</p>
+        <p class="card-text fs-6 text-center">R$ 59,99 à vista com desconto</p>
+        <div class="select-color-container hidden-on-hover">
+            <div class="d-flex justify-content-center rounded-5 pt-1">
+            <button type="button" class="w-100 btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" onclick="sendWhatsAppMessage(this)">Comprar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+
+
+        
+    <div class="col-6 col-md-3 mt-4">
+    <div class="card border-0" data-price="299.99" data-date="2023-07-01">
+        <a href="#" class="text-decoration-none">
+        <img src="img/dino.png" class="card-img-top pt-5 original" alt="Product 2">
+        </a>
+        <div class="card-body position-relative">
+        <h5 class="card-title fs-6 text-center">Dino</h5>
+        <p class="card-text fs-2 fw-bold text-center">R$ 49,99</p>
+        <p class="card-text fs-6 text-center">R$ 45,00 à vista com desconto</p>
+        <div class="select-color-container hidden-on-hover">
+            <div class="d-flex justify-content-center rounded-5 pt-1">
+            <button type="button" class="w-100 btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" onclick="sendWhatsAppMessage(this)">Comprar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+
+
+        <div class="col-6 col-md-3 mt-4">
+    <div class="card border-0" data-price="299.99" data-date="2023-07-01">
+        <a href="#" class="text-decoration-none">
+        <img src="img/bonecas.png" class="card-img-top pt-5 original" alt="Product 2">
+        </a>
+        <div class="card-body position-relative">
+        <h5 class="card-title fs-6 text-center">Bonecas</h5>
+        <p class="card-text fs-2 fw-bold text-center">R$ 99,99</p>
+        <p class="card-text fs-6 text-center">R$ 80,00 à vista com desconto</p>
+        <div class="select-color-container hidden-on-hover">
+            <div class="d-flex justify-content-center rounded-5 pt-1">
+            <button type="button" class="w-100 btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" onclick="sendWhatsAppMessage(this)">Comprar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="col-6 col-md-3 mt-4">
+    <div class="card border-0" data-price="299.99" data-date="2023-07-01">
+        <a href="#" class="text-decoration-none">
+        <img src="img/dog.png" class="card-img-top pt-5 original" alt="Product 2">
+        </a>
+        <div class="card-body position-relative">
+        <h5 class="card-title fs-6 text-center">Animais</h5>
+        <p class="card-text fs-2 fw-bold text-center">R$ 99,99</p>
+        <p class="card-text fs-6 text-center">R$ 80,00 à vista com desconto</p>
+        <div class="select-color-container hidden-on-hover">
+            <div class="d-flex justify-content-center rounded-5 pt-1">
+            <button type="button" class="w-100 btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" onclick="sendWhatsAppMessage(this)">Comprar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="col-6 col-md-3 mt-4">
+    <div class="card border-0" data-price="299.99" data-date="2023-07-01">
+        <a href="#" class="text-decoration-none">
+        <img src="img/chaveiros.png" class="card-img-top pt-5 original" alt="Product 2">
+        </a>
+        <div class="card-body position-relative">
+        <h5 class="card-title fs-6 text-center">Chaveiros</h5>
+        <p class="card-text fs-2 fw-bold text-center">R$ 50,00</p>
+        <p class="card-text fs-6 text-center">R$ 45,00 à vista com desconto</p>
+        <div class="select-color-container hidden-on-hover">
+            <div class="d-flex justify-content-center rounded-5 pt-1">
+            <button type="button" class="w-100 btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" onclick="sendWhatsAppMessage(this)">Comprar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="col-6 col-md-3 mt-4">
+    <div class="card border-0" data-price="299.99" data-date="2023-07-01">
+        <a href="#" class="text-decoration-none">
+        <img src="img/kit-de-bonecas-do-filme-encanto.png" class="card-img-top pt-5 original" alt="Product 2">
+        </a>
+        <div class="card-body position-relative">
+        <h5 class="card-title fs-6 text-center">Bonecas</h5>
+        <p class="card-text fs-2 fw-bold text-center">R$ 99,99</p>
+        <p class="card-text fs-6 text-center">R$ 85,00 à vista com desconto</p>
+        <div class="select-color-container hidden-on-hover">
+            <div class="d-flex justify-content-center rounded-5 pt-1">
+            <button type="button" class="w-100 btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" onclick="sendWhatsAppMessage(this)">Comprar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="col-6 col-md-3 mt-4">
+    <div class="card border-0" data-price="299.99" data-date="2023-07-01">
+        <a href="#" class="text-decoration-none">
+        <img src="img/bonecav2.png" class="card-img-top pt-5 original" alt="Product 2">
+        </a>
+        <div class="card-body position-relative">
+        <h5 class="card-title fs-6 text-center">Boneca v2</h5>
+        <p class="card-text fs-2 fw-bold text-center">R$ 99,99</p>
+        <p class="card-text fs-6 text-center">R$ 85,00 à vista com desconto</p>
+        <div class="select-color-container hidden-on-hover">
+            <div class="d-flex justify-content-center rounded-5 pt-1">
+            <button type="button" class="w-100 btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" onclick="sendWhatsAppMessage(this)">Comprar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="col-6 col-md-3 mt-4">
+    <div class="card border-0" data-price="299.99" data-date="2023-07-01">
+        <a href="#" class="text-decoration-none">
+        <img src="img/conjunto.png" class="card-img-top pt-5 original" alt="Product 2">
+        </a>
+        <div class="card-body position-relative">
+        <h5 class="card-title fs-6 text-center">conjunto de bonecas</h5>
+        <p class="card-text fs-2 fw-bold text-center">R$ 299,99</p>
+        <p class="card-text fs-6 text-center">R$ 285,00 à vista com desconto</p>
+        <div class="select-color-container hidden-on-hover">
+            <div class="d-flex justify-content-center rounded-5 pt-1">
+            <button type="button" class="w-100 btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" onclick="sendWhatsAppMessage(this)">Comprar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="col-6 col-md-3 mt-4">
+    <div class="card border-0" data-price="299.99" data-date="2023-07-01">
+        <a href="#" class="text-decoration-none">
+        <img src="img/tinkerbell.png" class="card-img-top pt-5 original" alt="Product 2">
+        </a>
+        <div class="card-body position-relative">
+        <h5 class="card-title fs-6 text-center">tinker bell</h5>
+        <p class="card-text fs-2 fw-bold text-center">R$ 499,99</p>
+        <p class="card-text fs-6 text-center">R$ 385,00 à vista com desconto</p>
+        <div class="select-color-container hidden-on-hover">
+            <div class="d-flex justify-content-center rounded-5 pt-1">
+            <button type="button" class="w-100 btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" onclick="sendWhatsAppMessage(this)">Comprar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+
+
+        </div>
+
+
+
+
+    
+
+
+    
+    <div class="mt-5">
+    <footer class="cor text-light py-4">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Coluna da Logo -->
+        <div class="col-md-4 d-flex align-items-lg-center flex-column justify-content-sm-start">
+        <img src="img/logo2.png" alt="Logo" class="img-fluid" style="max-width: 100px;">
+        <h1 class="fs-6 text-uppercase text-black">Centro Social Amiga de Todos</h1>
+        <hr style="border: 1px solid black;">
+
+        <div class="d-inline-flex  pt-lg-5 ps-lg-5 ms-lg-5 gap-2 icons-mb" id="icons2"> <!-- Mover a classe d-inline-flex aqui -->
+            <a class="nav-link active" aria-current="page" href="https://pt-br.facebook.com/"><i class="bi bi-facebook"></i></a>
+            <a class="nav-link active" aria-current="page" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+            <a class="nav-link active" aria-current="page" href="https://web.whatsapp.com/"><i class="bi bi-whatsapp"></i></a>
+            <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-messenger"></i></a>
+        </div>
+    </div>
+    
+                <!-- Coluna de Links -->
+                <div class="col-md-4 mt-5 mt-lg-0">
+                    <h5 class="text-uppercase text-black">Links</h5>
+                    <ul class="list-unstyled ">
+                        <li><a href="#" class="text-black text-decoration-none">Sobre</a></li>
+                        <li><a href="#" class="text-black text-decoration-none">Curso</a></li>
+                        <li><a href="#" class="text-black text-decoration-none">Preciso de Ajuda</a></li>
+                        <li><a href="#" class="text-black text-decoration-none">Loja</a></li>
+                        <li><a href="#" class="text-black text-decoration-none">Contato</a></li>
+                        <li><a href="#" class="text-black text-decoration-none">Quero Ajudar</a></li>
+                    </ul>
+                </div>
+                <!-- Coluna de Doações -->
+                <div class="col-md-4">
+                    <h5 class="text-uppercase text-black">Doações</h5>
+                    <p class="text-black">Apoie nosso trabalho!</p>
+                    <div class="mt-3"> 
+                        <img src="img/QR_Code_Afinz.png" alt="QR Code" class="img-fluid" style="max-width: 150px;"> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+
+    <!--bibliotecas bootstrap/js-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--bibliotecas slide-->
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+    </html>

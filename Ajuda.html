@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ 
+    <link rel="stylesheet" href="css/swippers.css">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!--Icons Bootstrap-->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+      <script src="https://kit.fontawesome.com/72b239e7b9.js" crossorigin="anonymous"></script>
+
+      <!--splide-->
+      <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+<link href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+" rel="stylesheet">
+
+
+      <!--Fontes-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+  <!--SWIPPER-->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
+  <link rel="shortcut icon" href="img/logo2.png" type="image/x-icon">
+
+  <title>Doações - Centro Social Amigo de Todos</title>
+</head>
+<body class="minha-fonte fundo">
+
+  
+
+       <nav class="navbar navbar-expand-sm topo py-3">
+    <div class="container-fluid justify-content-end">
+      </div>
+  </nav>
+
+ <nav class="navbar navbar-expand-sm navbar-light topo2">
+      <div class="container-fluid ms-5">
+        <a class="navbar-brand" href="index.html"><img src="img/logo2.png" alt="" style="width: 6rem;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
+          aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse d-lg-flex justify-content-lg-center" id="navbarID">
+          <div class="navbar-nav txt gap-5">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="sobre.html">Sobre</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Cursos</a>
+            <a class="nav-link active" aria-current="page" href="Ajuda.html">Preciso De Ajuda</a>
+            <a class="nav-link active" aria-current="page" href="loja.html">Loja</a>
+            <a class="nav-link active" aria-current="page" href="contato.html">Contato</a>
+            <a class="nav-link active txt" aria-current="page" href="queroajudar.html
+            " id="queroajudar">Quero Ajudar</a>
+          </div>
+
+          <div class="navbar-nav d-lg-flex d-sm-none" id="icons">
+            <div class=" d-inline-flex ms-auto">
+              <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-facebook"></i></a>
+              <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-instagram"></i></a>
+              <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-whatsapp"></i></a>
+              <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-messenger"></i></a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  
+   <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper meuSwiper">
+    <div class="imagem-fundo" style="background-image: url('img/rosa2.png');">
+        <div class="texto-sobre-imagem text-start text-uppercase">
+            Veja como podemos te ajudar
+        </div>
+    </div>
+</div>
+
+<main>
+  
+      <div class="bg-custom container-sm rounded-5">
+          <div class="row align-items-center">
+              <div class="col-md-6 text-center text-md-left">
+                  <img src="img/Livro.png" alt="Livro em 3D" class="book-image"> <!-- Substitua pelo caminho da sua imagem -->
+              </div>
+              <div class="col-md-6">
+                  <h1 class="text-uppercase text-start mb-4">Podemos lhe Ajudar</h1>
+                  <p class="text-start py-lg-5 py-sm-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. A doloribus facilis quasi. Excepturi harum dicta dolorem! Veritatis placeat quo dolor repudiandae nesciunt dolorem iste ullam. Tempora quis aut nam, quia quasi sapiente atque repellendus, nesciunt, laboriosam sint facere corrupti ab ipsa mollitia officia quibusdam. Maxime excepturi sapiente eum odio consequatur velit omnis officia maiores deleniti natus iusto illum, impedit dignissimos eveniet aliquam repudiandae atque facere repellat quisquam pariatur suscipit? Esse autem excepturi ullam ratione beatae repellat, architecto debitis corrupti quam eveniet soluta. Ea provident saepe quidem asperiores illum quaerat blanditiis praesentium corporis eligendi, vitae, repellendus incidunt nemo. Temporibus, atque reiciendi.s</p>
+                  <div class="form-group  text-center">
+                      <input type="text" class="form-control" placeholder="Digite aqui seu Email...">
+                  </div>
+                  <button class="btn btn-primary btn-custom mt-2" onclick="enviarTexto()">Enviar</button>
+              </div>
+          </div>
+      </div>
+</main>
+
+
+    <section class="container-sm mt-5 text-center">
+      <h1>PREENCHA ABAIXO PRA ENTRAR NA FILA DE ESPERA</h1>
+      <p >se inscreva e aguarde a resposta que chega em ate 24h</p>
+
+      <div class="container-sm d-flex justify-content-center gap-5 flex-column flex-sm-row">
+
+  <div class="card justify-content-center align-items-center py-5 mt-5 col-lg-4 col-12 card-minimo ">
+    <div class="card-body d-flex flex-column">
+      <h4 class="card-subtitle text-center text-black">Grupo Para Pais Enlutados</h4>
+      <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem facere omnis hic ea labore culpa, repudiandae iusto consequuntur provident in minima pariatur esse vitae sed recusandae corporis possimus et quibusdam.</p>
+    </div>
+  </div>
+
+  <div class="card justify-content-center align-items-center py-5 mt-5 col-lg-4 col-12 card-minimo">
+    <div class="card-body d-flex flex-column ">
+      <h4 class="card-subtitle text-center pt-3">Acompanhamento Psicologico</h4>
+      <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque esse dolores voluptate blanditiis. Non ea earum voluptatibus quis sunt incidunt, vero mollitia ad consectetur assumenda id quisquam sint necessitatibus soluta a laudantium fugiat eos possimus. Asperiores perferendis aliquid at saepe!</p>
+    </div>
+  </div>
+
+  <div class="card justify-content-center align-items-center py-5 mt-5 col-lg-4 col-12 card-minimo">
+    <div class="card-header text-center">
+    </div>
+    <div class="card-body d-flex flex-column">
+      <h4 class="card-subtitle text-center pt-3">Terapia Interativas</h4>
+      <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores deserunt numquam corrupti alias animi placeat magnam quae eligendi dolor velit a corporis, incidunt repellendus vitae rerum natus veritatis. Quia modi vel, expedita numquam sunt quisquam voluptatum rerum? Rerum, reprehenderit ab?</p>
+    </div>
+  </div>
+    </section>
+
+ <main class="container-sm text-center mt-5">
+  <h1>Preencha o Formulario com a opção desejada</h1>
+
+  <div class="d-flex justify-content-center align-items-center">
+    <form class="px-4 w-100" id="form">
+      <hr>
+      <div class="form-group">
+        <div class="row mb-3">
+          <div class="col">
+            <input type="text" class="form-control glass" id="First-Name" placeholder="Nome" required>
+          </div>
+          <div class="col">
+            <input type="text" class="form-control glass" id="Last-Name" placeholder="Sobrenome" required>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col">
+            <input type="email" class="form-control glass" id="Email" placeholder="Email" required>
+          </div>
+          <div class="col">
+            <input type="tel" class="form-control glass" id="Phone" placeholder="Telefone" required>
+          </div>
+        </div>
+        <div class="mb-3">
+          <select class="form-select glass" id="Category" required>
+            <option value="" disabled hidden>Selecione a opção que deseja Ajuda</option>
+            <option value="Categoria 1">Grupo para pais enlutados</option>
+            <option value="Categoria 2">Acolhimento Psicologico</option>
+            <option value="Categoria 3">Terapias interativas</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control glass" id="Message" rows="4" placeholder="Mensagem" required></textarea>
+        </div>
+        <button class="btn btn-light glass  d-flex justify-content-start" type="submit">Enviar</button>
+      </div>
+    </form>
+  </div>
+</main>
+
+
+<div class="mt-5">
+  <footer class="cor text-light py-4">
+      <div class="container-sm">
+          <div class="row">
+              <!-- Coluna da Logo -->
+       <div class="col-md-4 d-flex align-items-lg-center flex-column justify-content-sm-start">
+      <img src="img/logo2.png" alt="Logo" class="img-fluid" style="max-width: 100px;">
+      <h1 class="fs-6 text-uppercase text-black">Centro Social Amiga de Todos</h1>
+      <hr style="border: 1px solid black;">
+
+      
+
+      <div class="d-inline-flex  pt-lg-5 ps-lg-5 ms-lg-5 gap-2 icons-mb" id="icons2"> <!-- Mover a classe d-inline-flex aqui -->
+          <a class="nav-link active" aria-current="page" href="https://pt-br.facebook.com/"><i class="bi bi-facebook"></i></a>
+          <a class="nav-link active" aria-current="page" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+          <a class="nav-link active" aria-current="page" href="https://web.whatsapp.com/"><i class="bi bi-whatsapp"></i></a>
+          <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-messenger"></i></a>
+      </div>
+  </div>
+  
+              <!-- Coluna de Links -->
+              <div class="col-md-4 mt-5 mt-lg-0">
+                  <h5 class="text-uppercase text-black">Links</h5>
+                  <ul class="list-unstyled ">
+                      <li><a href="#" class="text-black text-decoration-none">Sobre</a></li>
+                      <li><a href="#" class="text-black text-decoration-none">Curso</a></li>
+                      <li><a href="#" class="text-black text-decoration-none">Preciso de Ajuda</a></li>
+                      <li><a href="#" class="text-black text-decoration-none">Loja</a></li>
+                      <li><a href="#" class="text-black text-decoration-none">Contato</a></li>
+                      <li><a href="#" class="text-black text-decoration-none">Quero Ajudar</a></li>
+                  </ul>
+              </div>
+              <!-- Coluna de Doações -->
+              <div class="col-md-4">
+                  <h5 class="text-uppercase text-black">Doações</h5>
+                  <p class="text-black">Apoie nosso trabalho!</p>
+                  <div class="mt-3"> 
+                      <img src="img/QR_Code_Afinz.png" alt="QR Code" class="img-fluid" style="max-width: 150px;"> 
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!--bibliotecas slide-->
+      <script src="script.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

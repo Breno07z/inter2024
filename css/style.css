@@ -1,0 +1,425 @@
+
+:root{
+  --cor1: #f0f0f0;
+  --cor2: #800080;
+  --cor3: #f1e9da;
+}
+
+body{
+  overflow-y: none;
+}
+
+.fundo{
+  background-color: var(--cor3);
+}
+
+.minha-fonte{
+  font-family: "Kanit", sans-serif;
+}
+
+.topo {
+  background-color: var(--cor2);
+  height: 24px;
+}
+
+.topo2{
+  background-color: var(--cor1);
+}
+
+.topo3{
+  background-color: aqua;
+}
+.txt{
+  font-size: 15px;
+
+}
+
+#icons{
+  transform: translateX(14rem);
+  font-size: 15px;
+}
+
+/*SWIPPER*/
+.swiper {
+      width: 100%;
+      height: 43rem;
+      background: #000;
+    }
+
+    .swiper-slide {
+      font-size: 18px;
+      color: #fff;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 40px 60px;
+    }
+      /* INICIO IMAGEM*/
+    .parallax-bg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 130%;
+      height: 100%;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .parallax-bg2{
+         position: absolute;
+      left: 0;
+      top: 0;
+      width: 130%;
+      height: 20%;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .swiper-slide .title {
+      font-size: 41px;
+      font-weight: 300;
+      
+    }
+
+    .swiper-slide .subtitle {
+      font-size: 21px;
+    }
+
+    .swiper-slide .text {
+      font-size: 14px;
+      max-width: 400px;
+      line-height: 1.3;
+    }
+    /*swipper fim*/
+
+
+    /* cards1 */
+    .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+   .card-minimo {
+  max-width: 300px;
+  max-height: 240px;
+  padding: 5px;
+}
+ 
+
+
+.card-deck {
+  display: flex;
+}
+
+.card {
+  width: 50%; /* Define a largura de cada card como 50% */
+}
+
+.card-img {
+  height: 38rem; /* Mantém a proporção da imagem */
+}
+
+.txt2{
+  margin-top: 15rem;
+}
+
+
+ 
+
+ .LG {
+      position: relative;
+      width: 300px;
+    }
+
+
+
+      
+  .card2 {
+  width: 400px;
+  height: 400px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card2:hover {
+  background-color: var(--cor2); /* Cor roxa ao passar o mouse */
+}
+
+.card2 a {
+  color: rgb(0, 0, 0);
+  transition: .4s ease-in-out;
+}
+
+.card2 a:hover {
+  color: red;
+}
+.card2:hover i {
+  color: white; /* Ícones ficam brancos ao passar o mouse */
+}
+
+.card2 h2 {
+  margin-top: 15px;
+  font-size: 1.3rem;
+  color: #555;
+}
+
+.card2 button {
+  margin-top: auto;
+}
+
+.splide__slide {
+  margin: 0;
+  color: #800080;
+}
+
+.splide__pagination {
+  display: none;
+  justify-content: center;
+  margin-top: 20px;
+
+}
+
+.splide__pagination .splide__pagination__page {
+  width: 12px;
+  height: 12px;
+  background-color: #ddd;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  display: none;
+}
+
+.splide__pagination .splide__pagination__page.is-active {
+ display: none;
+}
+
+.splide__arrow {
+  background-color: #e72727;
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  
+}
+
+.splide__arrow--prev{
+  margin-top: 15rem;
+  margin-left: 37rem;
+}
+
+.splide__arrow--next{
+  margin-top: 15rem;
+  margin-right: 37rem;
+}
+
+
+.splide__arrow--prev::before,
+.splide__arrow--next::before {
+  font-size: 1.5rem;
+}
+
+.splide__arrow:hover {
+  background-color: var(--cor2);
+  color: #fff;
+}
+
+
+.course-img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.arrow-icon {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Adicionando transform */
+}
+
+.course-card:hover .arrow-icon {
+  opacity: 0;
+  transform: translateY(20rem); /* Mova a seta para baixo ao passar o mouse */
+}
+
+.card-content {
+  display: none;
+  opacity: 0;
+  max-height: 0;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.course-card:hover .card-content {
+  display: block;
+  max-height: 200px; /* Ajustar conforme necessário */
+  opacity: 1;
+}
+
+.course-card {
+  transition: height 0.5s ease;
+}
+
+.course-card:hover {
+  height: 600px; /* Estique o card ao passar o mouse */
+}
+
+
+.cor {
+  background-color: var(--cor2); /* Para fundo preto */
+  color: white; /* Para o texto */
+}
+
+.carousel-inner {
+    overflow: hidden; /* Esconde o conteúdo que sai do contêiner */
+}
+
+.carousel-item {
+    transition: transform 0.5s ease; /* Transição suave */
+    display: flex; /* Para centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+
+    .carousel-container {
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            background-color: transparent;
+            padding: 20px 0;
+        }
+        .carousel {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        .carousel img {
+            width: 150px;
+            height: 100px;
+            margin: 0 15px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .carousel img:hover {
+            transform: scale(1.1);
+        }
+
+          hr{
+            background-color: #000;
+          }
+            .share {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.share a {
+  color: rgb(3, 3, 3);
+  transition: .4s ease-in-out;
+}
+
+.share a:hover {
+  color: red;
+}
+
+
+  /* From Uiverse.io by adamgiebl */ 
+button {
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #725AC1;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #725AC1;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #725AC1;
+}
+
+button:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #725AC1;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+.icons-md{
+  margin-right: -20rem;
+}
+
+#icons2{
+  transform: translateX(15rem);
+}
+
+
+
+
+@media (max-width: 767.98px) { /* Para telas menores que 768px */
+  .bg-white{
+    width: 22rem;
+    height: 20rem;
+     box-sizing: border-box;
+  }
+
+  .txt2{
+  margin-top: 1rem;
+}
+
+  .img-mb{
+    width: 22rem;
+    height: 20rem;
+  }
+  
+   .carousel-item iframe {
+    width: 100%; /* Make iframe responsive on mobile */
+    height: 250px; /* Adjust height as needed */
+  }
+
+  .icons-sm{
+    margin-right: 34rem;
+   margin-top: -4rem;
+  }
+
+  .icons-sm a:hover{
+    color: red;
+  }
+
+  #icons2{
+    transform: translateX(1rem);
+  }
+ 
+  .sb-mb{
+    height: 130rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #icons{
+    transform: translateX(5rem);
+  }
+
+  .icons-mb{
+    transform: translateX(12rem);
+  }
+ 
+  .img-md{
+    height: 50rem;
+  }
+
+}

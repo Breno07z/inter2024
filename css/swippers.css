@@ -1,0 +1,298 @@
+.meuSwiper {
+    position: relative;
+}
+
+.imagem-fundo {
+    height: 25vh; /* 25% da altura da viewport */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.texto-sobre-imagem {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Cor do texto */
+    font-size: 2rem; /* Tamanho do texto */
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para melhor legibilidade */
+}
+
+root{
+  --cor1: #f0f0f0;
+  --cor2: #800080;
+  --cor3: #f1e9da;
+}
+
+body{
+  overflow-y: none;
+}
+
+.fundo{
+  background-color: #f1e9da;
+}
+
+.minha-fonte{
+  font-family: "Kanit", sans-serif;
+}
+
+.topo {
+  background-color: #800080;
+  height: 24px;
+}
+
+.topo2{
+  background-color: var(--cor1);
+}
+
+.topo3{
+  background-color: aqua;
+}
+.txt{
+  font-size: 15px;
+
+}
+
+#icons{
+  transform: translateX(14rem);
+  font-size: 15px;
+}
+
+ .bg-custom {
+            background-color: white;
+            height: 70vh; /* Altura total da viewport */
+            width: 40vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: rgb(0, 0, 0); /* Cor do texto */
+            margin-top: 5rem;
+            box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.2);
+        }
+
+         .content {
+            display: flex;
+            align-items: center;
+        }
+        .book-image {
+            max-width: 40rem; /* Ajuste o tamanho da imagem */
+            margin-right: 20px; /* Espaço entre a imagem e o texto */
+            box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-custom {
+            width: 100%; /* Ajuste a largura como preferir */
+
+        }
+
+        .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+   .card-minimo {
+  max-width: 400px;
+  max-height: 240px;
+  
+}
+ 
+
+
+.card-deck {
+  display: flex;
+}
+
+.card {
+  width: 50%; /* Define a largura de cada card como 50% */
+}
+
+.cor {
+  background-color: #800080; /* Para fundo preto */
+  color: white; /* Para o texto */
+}
+
+
+.form-container {
+            background-color: white; /* Fundo branco para o formulário */
+            padding: 30px; /* Espaçamento interno */
+            border-radius: 8px; /* Cantos arredondados */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            margin-bottom: 10rem;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.5); /* Efeito de vidro */
+        }
+
+
+        /*login*/
+
+        /* From Uiverse.io by akshat-patel28 */ 
+.form-container {
+  width: 400px;
+  height: 500px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 20px 30px;
+}
+
+.title {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 10px 0 30px 0;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 15px;
+}
+
+.input {
+  border-radius: 20px;
+  border: 1px solid #c0c0c0;
+  outline: 0 !important;
+  box-sizing: border-box;
+  padding: 12px 15px;
+}
+
+.page-link {
+  text-decoration: underline;
+  margin: 0;
+  text-align: end;
+  color: #747474;
+  text-decoration-color: #747474;
+}
+
+.page-link-label {
+  cursor: pointer;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.page-link-label:hover {
+  color: #000;
+}
+
+.form-btn {
+  padding: 10px 15px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border-radius: 20px;
+  border: 0 !important;
+  outline: 0 !important;
+  background: teal;
+  color: white;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.form-btn:active {
+  box-shadow: none;
+}
+
+.sign-up-label {
+  margin: 0;
+  font-size: 10px;
+  color: #747474;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.sign-up-link {
+  margin-left: 1px;
+  font-size: 11px;
+  text-decoration: underline;
+  text-decoration-color: teal;
+  color: teal;
+  cursor: pointer;
+  font-weight: 800;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.buttons-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+.apple-login-button,
+    .google-login-button {
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+        rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 11px;
+  gap: 5px;
+}
+
+.apple-login-button {
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #000;
+}
+
+.google-login-button {
+  border: 2px solid #747474;
+}
+
+.apple-icon,
+    .google-icon {
+  font-size: 18px;
+  margin-bottom: 1px;
+}
+
+.form-select option:first-child {
+  display: none;
+}
+
+#icons2{
+  transform: translateX(15rem);
+}
+
+@media (max-width: 767.98px) { 
+  .book-image{
+    height: 15rem;
+    margin-top: -2rem;
+  }
+
+  .bg-custom{
+    height: 55rem;
+    width: 20rem;
+  }
+  
+  .icons-mb{
+    
+     margin-right: 20rem;
+   margin-top: -1rem;
+  }
+
+#icons2{
+    transform: translateX(1rem);
+  }
+}
+
